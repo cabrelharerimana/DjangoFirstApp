@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>student Form</title>
+    </head>
+    <body>
+        <h1>Create student</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label>First name:</label>
+                {{ form.first_name }}
+            </div>
+            <div>
+                <label>Last name:</label>
+                {{ form.last_name }}
+            </div>
+            <div>
+                <label>Date of Birth:</label>
+                {{ form.date_of_birth }}
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </body>
+
+</html>
